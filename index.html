@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khushi Furniture House - Premium & Bespoke furniture in Jhajra, Dehradun. Designer sofas, beds, dining sets, luxury wardrobes, and executive office furniture.">
+  <title>Khushi Furniture House | Luxury Living & Fine Furniture, Jhajra, Dehradun</title>
+  
+  <!-- Google Fonts: Luxury Serif & Clean Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #0d0a08;
+      --bg-surface: #14100d;
+      --espresso: #1f1813;
+      --gold-primary: #d4af37;
+      --gold-light: #f3e5ab;
+      --gold-gradient: linear-gradient(135deg, #dfba73 0%, #c59b4c 50%, #9e7428 100%);
+      --sand-bg: #f9f7f4;
+      --card-bg: #ffffff;
+      --text-dark: #1b1714;
+      --text-muted: #6b635b;
+      --border-light: rgba(197, 155, 76, 0.22);
+      --border-glass: rgba(255, 255, 255, 0.12);
+      --font-display: 'Cinzel', serif;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+      --shadow-luxury: 0 20px 45px rgba(13, 10, 8, 0.08);
+      --shadow-hover: 0 25px 50px rgba(197, 155, 76, 0.18);
+      --radius-sm: 4px;
+      --radius-md: 10px;
+      --radius-lg: 18px;
+      --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      color: var(--text-dark);
+      background-color: var(--sand-bg);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; transition: var(--transition); }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(1240px, 92%);
+      margin: 0 auto;
+    }
+
+    /* Top Announcement Bar */
+    .top-bar {
+      background: var(--bg-dark);
+      color: var(--gold-light);
+      font-size: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      letter-spacing: 1px;
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar a { color: var(--gold-light); font-weight: 500; }
+    .top-bar a:hover { color: #fff; }
+
+    /* Luxury Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+    .nav {
+      height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-main {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--bg-dark);
+      text-transform: uppercase;
+    }
+    .logo-main span {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .logo-sub {
+      font-family: var(--font-sans);
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    nav a {
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      position: relative;
+      padding: 6px 0;
+      color: var(--text-dark);
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: var(--gold-gradient);
+      transition: var(--transition);
+    }
+    nav a:hover {
+      color: var(--gold-primary);
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #000;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 13px 26px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 18px rgba(197, 155, 76, 0.35);
+      border: none;
+      cursor: pointer;
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(197, 155, 76, 0.45);
+      color: #000;
+    }
+
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 13px 26px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-glass:hover {
+      background: #fff;
+      color: var(--bg-dark);
+      border-color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .menu {
+      display: none;
+      font-size: 24px;
+      color: var(--bg-dark);
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+        linear-gradient(to right, rgba(13, 10, 8, 0.94) 0%, rgba(13, 10, 8, 0.72) 48%, rgba(13, 10, 8, 0.3) 100%),
+        url("images/hero-furniture.jpg") center/cover no-repeat;
+      color: #fff;
+      padding: 100px 0;
+    }
+    .hero-content {
+      max-width: 760px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--gold-light);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .eyebrow::before, .eyebrow::after {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--gold-primary);
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.12;
+      font-weight: 600;
+      margin-bottom: 22px;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 em {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 400;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-right: 8px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #ded6cc;
+      max-width: 600px;
+      margin-bottom: 38px;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .hero-stats {
+      margin-top: 55px;
+      display: flex;
+      gap: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 24px;
+    }
+    .stat-item h4 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+    .stat-item p {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #bbb;
+      margin: 0;
+    }
+
+    /* Section Shared Styling */
+    section { padding: 110px 0; }
+    .section-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 60px;
+    }
+    .section-head .eyebrow {
+      color: #9c7329;
+    }
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.25;
+      font-weight: 600;
+      color: var(--bg-dark);
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+    .section-head p {
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* Categories Section */
+    .categories {
+      background: #f4ede3;
+      position: relative;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-luxury);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(197, 155, 76, 0.55);
+    }
+    .card-img-wrap {
+      width: 100%;
+      height: 280px;
+      position: relative;
+      overflow: hidden;
+      background: #e7e0d5;
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    .card:hover img {
+      transform: scale(1.08);
+    }
+    .card-tag {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(13, 10, 8, 0.82);
+      backdrop-filter: blur(8px);
+      color: var(--gold-light);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .card-body {
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .card h3 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--bg-dark);
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    .card-link {
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--gold-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card-link i {
+      transition: transform 0.3s ease;
+    }
+    .card:hover .card-link i {
+      transform: translateX(5px);
+    }
+
+    /* About Section with Dual Image Gallery */
+    .about-wrap {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+    .about-visuals {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 18px;
+    }
+    .about-img-main {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      border: 1px solid rgba(197, 155, 76, 0.2);
+    }
+    .about-img-sub {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      align-self: flex-end;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      border: 1px solid rgba(197, 155, 76, 0.2);
+    }
+    .about-badge {
+      position: absolute;
+      bottom: -25px;
+      left: 30px;
+      background: var(--bg-dark);
+      color: #fff;
+      padding: 22px 28px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-light);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+      text-align: center;
+      z-index: 2;
+    }
+    .about-badge strong {
+      font-family: var(--font-display);
+      font-size: 28px;
+      color: var(--gold-primary);
+      display: block;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .about-badge span {
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #ddd;
+    }
+    .about-content p {
+      color: var(--text-muted);
+      margin: 16px 0;
+      font-size: 15.5px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .feature {
+      padding: 18px 20px;
+      background: #fbf9f6;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--gold-primary);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+    .feature h4 {
+      font-size: 15px;
+      color: var(--bg-dark);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .feature h4 i {
+      color: var(--gold-primary);
+      font-size: 13px;
+    }
+    .feature small {
+      display: block;
+      color: var(--text-muted);
+      font-size: 12.5px;
+      line-height: 1.4;
+    }
+
+    /* Showcase Wide Banner */
+    .showcase-banner {
+      padding: 100px 0;
+      background: linear-gradient(rgba(13,10,8,0.85), rgba(13,10,8,0.85)),
+                  url("images/luxury-showcase-wide.jpg") center/cover fixed no-repeat;
+      color: white;
+      text-align: center;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .showcase-banner h2 {
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    .showcase-banner p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #ddd;
+      font-size: 16px;
+    }
+
+    /* Gallery Section */
+    .gallery-section {
+      background: #faf7f2;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+    }
+    .gallery-item {
+      position: relative;
+      height: 250px;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .gallery-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(13, 10, 8, 0.65);
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      color: #fff;
+    }
+    .gallery-item-overlay i {
+      font-size: 24px;
+      color: var(--gold-light);
+    }
+    .gallery-item-overlay span {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    .gallery-item:hover .gallery-item-overlay {
+      opacity: 1;
+    }
+
+    /* CTA Section */
+    .cta {
+      background:
+        radial-gradient(ellipse at center, rgba(31, 24, 19, 0.95) 0%, rgba(13, 10, 8, 1) 100%);
+      color: white;
+      text-align: center;
+      border-top: 1px solid rgba(197, 155, 76, 0.25);
+    }
+    .cta h2 {
+      color: #fff;
+    }
+    .cta p {
+      color: #cbbeaf;
+      margin: 14px auto 35px;
+      max-width: 620px;
+      font-size: 17px;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: #f3ece1;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: stretch;
+    }
+    .contact-box {
+      background: white;
+      padding: 45px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-luxury);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .contact-box h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      margin-bottom: 24px;
+      color: var(--bg-dark);
+      letter-spacing: 0.5px;
+    }
+    .contact-item {
+      display: flex;
+      gap: 18px;
+      padding: 16px 0;
+      border-bottom: 1px solid #f0e9e1;
+    }
+    .contact-item:last-of-type {
+      border-bottom: none;
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #f7f3ee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-primary);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .contact-item strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--bg-dark);
+      margin-bottom: 4px;
+    }
+    .contact-item span, .contact-item a {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    .contact-btns {
+      margin-top: 28px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-wa-solid {
+      background: #25d366;
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 13px 26px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-wa-solid:hover {
+      background: #1eb956;
+      color: white;
+      transform: translateY(-2px);
+    }
+    .map-wrapper {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-luxury);
+      border: 1px solid var(--border-light);
+      min-height: 380px;
+    }
+    .map {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-dark);
+      color: #9e948a;
+      padding: 65px 0 35px;
+      border-top: 1px solid rgba(197, 155, 76, 0.2);
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 45px;
+    }
+    .footer-col h4 {
+      font-family: var(--font-display);
+      font-size: 15px;
+      color: #fff;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .footer-col p {
+      font-size: 14px;
+      line-height: 1.8;
+      max-width: 320px;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: #9e948a;
+    }
+    .footer-links a:hover {
+      color: var(--gold-light);
+      padding-left: 4px;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+    .footer-bottom strong {
+      color: var(--gold-light);
+    }
+
+    /* Floating WhatsApp Button */
+    .float-wa {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+      background: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+      z-index: 999;
+      transition: var(--transition);
+    }
+    .float-wa:hover {
+      transform: scale(1.1) rotate(10deg);
+      color: white;
+    }
+
+    /* Modal / Lightbox */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 6, 5, 0.95);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+    .modal.show {
+      display: flex;
+    }
+    .modal img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-light);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+      animation: modalFadeIn 0.3s ease;
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .close {
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      color: #fff;
+      font-size: 38px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .close:hover {
+      color: var(--gold-primary);
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1100px) {
+      .gallery { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 992px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      .about-wrap { grid-template-columns: 1fr; gap: 60px; }
+      .about-badge { left: 20px; bottom: -20px; }
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar { display: none; }
+      nav {
+        display: none;
+        position: absolute;
+        top: 86px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 30px 20px;
+        flex-direction: column;
+        border-bottom: 1px solid var(--border-light);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      }
+      nav.open { display: flex; }
+      .menu { display: block; }
+      .nav-actions .btn-gold { display: none; }
+      .hero { min-height: 75vh; }
+      .hero h1 { font-size: 36px; }
+      .grid { grid-template-columns: 1fr; }
+      .about-visuals { grid-template-columns: 1fr; }
+      .about-img-sub { display: none; }
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item { height: 180px; }
+      .footer-top { grid-template-columns: 1fr; gap: 30px; }
+      .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <span><i class="fa-solid fa-location-dot"></i> Jhajra, Dehradun · High-End & Custom Furniture Store</span>
+    <span><a href="tel:+919719152193"><i class="fa-solid fa-phone"></i> +91 9719152193</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">
+      <div class="logo-main">Khushi <span>Furniture</span></div>
+      <div class="logo-sub">Jhajra · Dehradun</div>
+    </a>
+    <div class="menu" onclick="toggleMenu()" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></div>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#categories">Collection</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn-gold" href="tel:+919719152193"><i class="fa-solid fa-phone-volume"></i> Call Studio</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="eyebrow">Artisan Craftsmanship & Comfort</div>
+    <h1>Make Your Home Feel <em>Like Royalty.</em></h1>
+    <p>Discover stylish, comfortable and artisanal quality furniture at Khushi Furniture House, Jhajra, Dehradun.</p>
+    <div class="hero-btns">
+      <a class="btn-gold" href="#categories"><i class="fa-solid fa-couch"></i> Explore Collection</a>
+      <a class="btn-glass" href="https://wa.me/9719152193?text=Hello%20Khushi%20Furniture%20House%2C%20I%20want%20to%20know%20about%20your%20furniture." target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Concierge</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <h4>100%</h4>
+        <p>Premium Quality</p>
+      </div>
+      <div class="stat-item">
+        <h4>Bespoke</h4>
+        <p>Custom Designs</p>
+      </div>
+      <div class="stat-item">
+        <h4>Dehradun</h4>
+        <p>Jhajra Showroom</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Collection / Categories -->
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Handcrafted Living</div>
+      <h2>Furniture Made for Your Space</h2>
+      <p>Explore our signature collection and contact us directly for availability, dimensions, custom finishes and pricing.</p>
+    </div>
+
+    <div class="grid">
+      <!-- 1. Sofas -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-tag">Living Room</span>
+          <img src="images/sofa-1.jpg" alt="Luxury Sofa furniture" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div>
+            <h3>Sofas</h3>
+            <p>Comfortable seating for living rooms and family spaces.</p>
+          </div>
+          <a href="https://wa.me/919719152193?text=Inquiring%20about%20Sofas" class="card-link" target="_blank">Enquire Design <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- 2. Beds -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-tag">Bedroom</span>
+          <img src="images/bed-1.jpg" alt="Designer Bed furniture" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div>
+            <h3>Beds</h3>
+            <p>Elegant designs for a comfortable and relaxing bedroom.</p>
+          </div>
+          <a href="https://wa.me/9719152193?text=Inquiring%20about%20Beds" class="card-link" target="_blank">Enquire Design <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- 3. Dining Sets -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-tag">Dining Area</span>
+          <img src="images/dining-1.jpg" alt="Fine Dining furniture" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div>
+            <h3>Dining Sets</h3>
+            <p>Bring family and friends together around a beautiful dining set.</p>
+          </div>
+          <a href="https://wa.me/919719152193?text=Inquiring%20about%20Dining%20Sets" class="card-link" target="_blank">Enquire Design <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- 4. Wardrobes -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-tag">Storage</span>
+          <img src="images/wardrobe-1.jpg" alt="Modular Wardrobe furniture" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div>
+            <h3>Wardrobes</h3>
+            <p>Practical storage with modern designs for your bedroom.</p>
+          </div>
+          <a href="https://wa.me/919719152193?text=Inquiring%20about%20Wardrobes" class="card-link" target="_blank">Enquire Design <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- 5. Chairs -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-tag">Accent & Dining</span>
+          <img src="images/chair-1.jpg" alt="Designer Chair furniture" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div>
+            <h3>Chairs</h3>
+            <p>Chairs for home, dining, study and everyday comfort.</p>
+          </div>
+          <a href="https://wa.me/919719152193?text=Inquiring%20about%20Chairs" class="card-link" target="_blank">Enquire Design <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- 6. Office Furniture -->
+      <article class="card">
+        <div class="card-img-wrap">
+          <span class="card-tag">Workplace</span>
+          <img src="images/office-1.jpg" alt="Executive Office furniture" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div>
+            <h3>Office Furniture</h3>
+            <p>Functional furniture for offices, workspaces and study areas.</p>
+          </div>
+          <a href="https://wa.me/919719152193?text=Inquiring%20about%20Office%20Furniture" class="card-link" target="_blank">Enquire Design <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- About Section (includes craftsmanship-detail.jpg) -->
+<section id="about">
+  <div class="container about-wrap">
+    <div class="about-visuals">
+      <img class="about-img-main" src="images/furniture-gallery.jpg" alt="Khushi Furniture House showroom" loading="lazy">
+      <!-- Extra Image 1: Craftsmanship Detail -->
+      <img class="about-img-sub" src="images/craftsmanship-detail.jpg" alt="Furniture Craftsmanship Detail" loading="lazy">
+      <div class="about-badge">
+        <strong>Jhajra</strong>
+        <span>Premier Furniture Destination Dehradun</span>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="eyebrow">The Khushi Legacy</div>
+      <h2>Furniture That Fits Your Lifestyle.</h2>
+      <p>At Khushi Furniture House, we bring together useful designs, comfortable furniture and a variety of options for your home and workspace.</p>
+      <p>Visit us in Jhajra, Dehradun, explore our collection and talk to us about the furniture you need.</p>
+      
+      <div class="features">
+        <div class="feature">
+          <h4><i class="fa-solid fa-gem"></i> Quality Focus</h4>
+          <small>Furniture selected with superior materials and care.</small>
+        </div>
+        <div class="feature">
+          <h4><i class="fa-solid fa-shapes"></i> Broad Variety</h4>
+          <small>Endless options tailored for home and corporate interiors.</small>
+        </div>
+        <div class="feature">
+          <h4><i class="fa-solid fa-store"></i> Local Store</h4>
+          <small>Conveniently located in Jhajra with walk-in consultations.</small>
+        </div>
+        <div class="feature">
+          <h4><i class="fa-solid fa-comment-dots"></i> Easy Enquiry</h4>
+          <small>Direct instant assistance via phone call or WhatsApp.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Luxury Showcase Wide Banner (includes luxury-showcase-wide.jpg) -->
+<section class="showcase-banner">
+  <div class="container">
+    <div class="eyebrow" style="color: var(--gold-light);">Refined Interiors</div>
+    <h2>Transforming Spaces Into Works of Art</h2>
+    <p>Each curve, joint, and fabric is curated to deliver unmatched longevity and sophisticated charm to your home.</p>
+    <a class="btn-gold" href="tel:+919719152193"><i class="fa-solid fa-phone"></i> Consult Our Experts</a>
+  </div>
+</section>
+
+<!-- Gallery Section (includes original + gallery-accent-1.jpg & gallery-accent-2.jpg) -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Studio Showcase</div>
+      <h2>See Our Furniture</h2>
+      <p>Tap any photograph to view high resolution detailing.</p>
+    </div>
+
+    <div class="gallery">
+      <!-- Original Gallery Items -->
+      <div class="gallery-item" onclick="openImg('images/sofa-2.jpg')">
+        <img src="images/sofa-2.jpg" alt="Luxury Sofa Design" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Sofa</span>
+        </div>
+      </div>
+      <div class="gallery-item" onclick="openImg('images/sofa-3.jpg')">
+        <img src="images/sofa-3.jpg" alt="Premium Sofa" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Sofa</span>
+        </div>
+      </div>
+      <div class="gallery-item" onclick="openImg('images/bed-2.jpg')">
+        <img src="images/bed-2.jpg" alt="Master Bed" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Bed</span>
+        </div>
+      </div>
+      <div class="gallery-item" onclick="openImg('images/bed-3.jpg')">
+        <img src="images/bed-3.jpg" alt="Luxury Bed Frame" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Bed</span>
+        </div>
+      </div>
+      <div class="gallery-item" onclick="openImg('images/dining-2.jpg')">
+        <img src="images/dining-2.jpg" alt="Dining Table Setup" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Dining</span>
+        </div>
+      </div>
+      <div class="gallery-item" onclick="openImg('images/dining-3.jpg')">
+        <img src="images/dining-3.jpg" alt="Artisan Dining" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Dining</span>
+        </div>
+      </div>
+      <div class="gallery-item" onclick="openImg('images/wardrobe-2.jpg')">
+        <img src="images/wardrobe-2.jpg" alt="Modern Wardrobe" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Wardrobe</span>
+        </div>
+      </div>
+      <div class="gallery-item" onclick="openImg('images/wardrobe-3.jpg')">
+        <img src="images/wardrobe-3.jpg" alt="Contemporary Wardrobe" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Wardrobe</span>
+        </div>
+      </div>
+
+      <!-- Extra Image 3: Gallery Accent 1 -->
+      <div class="gallery-item" onclick="openImg('images/gallery-accent-1.jpg')">
+        <img src="images/gallery-accent-1.jpg" alt="Luxury Accent Furniture" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Accent</span>
+        </div>
+      </div>
+
+      <!-- Extra Image 4: Gallery Accent 2 -->
+      <div class="gallery-item" onclick="openImg('images/gallery-accent-2.jpg')">
+        <img src="images/gallery-accent-2.jpg" alt="Designer Interior Furniture" loading="lazy">
+        <div class="gallery-item-overlay">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>View Interior</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+  <div class="container">
+    <div class="eyebrow" style="color: var(--gold-light);">Personalized Assistance</div>
+    <h2>Let's Find the Right Piece for You.</h2>
+    <p>Have a question about a product? Call us or send a WhatsApp message for customized sizing, pricing, and home delivery info.</p>
+    <a class="btn-gold" href="https://wa.me/919719152193?text=Hello%20Khushi%20Furniture%20House%2C%20I%20am%20interested%20in%20your%20furniture." target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Visit or Contact Us</div>
+      <h2>Khushi Furniture House</h2>
+      <p>Jhajra, Dehradun, Uttarakhand</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-box">
+        <div>
+          <h3>Contact Details</h3>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Address</strong>
+              <span>Jhajra, Dehradun, Uttarakhand, India</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <span><a href="tel:+919719152193">+91 9719152193</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>Send us your furniture enquiry anytime for instant catalogue pictures and estimates.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-btns">
+          <a class="btn-gold" href="tel:+919719152193"><i class="fa-solid fa-phone"></i> Call Now</a>
+          <a class="btn-wa-solid" href="https://wa.me/919719152193" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe class="map" title="Khushi Furniture House map"
+          src="https://www.google.com/maps?q=Jhajra%2C%20Dehradun%2C%20Uttarakhand&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="logo-main" style="color: #fff; margin-bottom: 12px;">Khushi <span style="background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Furniture</span></div>
+        <p>Your trusted home and commercial furniture destination in Jhajra, Dehradun. Designing spaces with quality, elegance and functionality.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Furniture Collection</a></li>
+          <li><a href="#about">About Our Studio</a></li>
+          <li><a href="#gallery">Showroom Gallery</a></li>
+          <li><a href="#contact">Contact & Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Showroom Timings</h4>
+        <p style="font-size: 13.5px; color: #dedede;">Monday – Sunday<br>Open all week for inquiries and walk-in consultation.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; <span id="year"></span> <strong>Khushi Furniture House</strong>. All rights reserved.</div>
+      <div style="font-size: 12px;">Crafted for Premium Living in Jhajra, Dehradun</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Link -->
+<a class="float-wa" href="https://wa.me/919719152193" target="_blank" aria-label="Contact on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- Lightbox Modal -->
+<div class="modal" id="modal" onclick="closeImg()">
+  <span class="close">&times;</span>
+  <img id="modalImg" alt="Luxury furniture preview">
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('nav').classList.toggle('open');
+  }
+
+  document.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('nav').classList.remove('open');
+    });
+  });
+
+  function openImg(src) {
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    modalImg.src = src;
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeImg() {
+    const modal = document.getElementById('modal');
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Escape key to close modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeImg();
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
